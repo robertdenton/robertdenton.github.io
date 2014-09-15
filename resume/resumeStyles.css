@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+#wrapper{
+	font-weight:200;
+	text-align: left;
+}
+#wrapper h1{
+	font-size:4em;
+	text-align: center;
+}
+#wrapper h2{
+	font-size:3.5em;
+	margin-bottom:0;
+}
+.head{
+	font-size:3em;
+}
+#bottom{
+	margin-top:5em;
+	text-align: center;
+}
