@@ -1,0 +1,5 @@
+_site
+.sass-cache
+todo/*
+media/orig/*
+media/about/*

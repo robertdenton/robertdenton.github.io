@@ -1,0 +1,91 @@
+// Owl carousel tweaks
+
+.owl-carousel{
+
+    margin-bottom: 20px;
+
+    .owl-item{
+        box-sizing: border-box;
+        border: 1px solid $grey-color;
+    }
+
+    .owl-dots {
+        position: absolute;
+        top: 0;
+        margin: 0 auto;
+        // background: rgba(0,0,0,.3);
+
+        transition: opacity 0.2s ease;
+        opacity: 0.3;
+
+        &:hover{  
+            transition: opacity 0.3s ease;
+            opacity: 0.7; 
+        }
+
+        .owl-dot {
+
+            border: 5px solid black;
+            margin: 5px;
+
+        }
+
+        .active{
+            border: 5px solid $grey-color;
+        }
+
+    }
+
+    .owl-caption{
+        font-style: italic;
+        font-size: $small-font-size;
+        background: $grey-color;
+        color: white;
+        margin-top:0;
+        padding: 2%;
+
+    }
+
+    .owl-nav {
+        color: black;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 100px;
+
+        .owl-prev, .owl-next {
+            position: absolute;
+            pointer-events: auto;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: auto;
+
+            transition: opacity 0.2s ease;
+            opacity: 0.3;
+
+            &:hover{  
+                transition: opacity 0.3s ease;
+                opacity: 0.7; 
+            }
+
+        }
+
+        .owl-prev {
+            left: 2%;
+
+            img{float:left;}
+        }
+
+        .owl-next{
+            right: 2%;
+            
+            img{float:right;}
+        }
+
+    }
+
+}
