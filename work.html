@@ -97,15 +97,7 @@ permalink: /work/
 </div>
 
 <script>
-	document.addEventListener("DOMContentLoaded", function() {
-		$('.owl-carousel').owlCarousel({
-			items: 1,
-			autoHeight: true,
-			loop: true,
-			margin: 5,
-			nav: true,
-			lazyLoad: true,
-			navText : ["<img src='/media/nav/left.png' width='10%'>", "<img src='/media/nav/right.png' width='10%'>"]
-		});
-	});
+	window.onload = function(){
+		owl();
+	}
 </script>
