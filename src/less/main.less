@@ -1,0 +1,89 @@
+@import "partials/variables.less";
+
+html,body{
+	margin: none;
+	padding: 10px;
+	color: @db;
+	background: @lg;
+	font-family: monospace;
+}
+
+a{
+	color: @db;
+	text-decoration: none;
+	border-bottom: 1px solid @db;
+	transition: all 0.1s;
+
+	&:hover, &:active{
+		color: @dg;
+		text-decoration: none;
+		border-bottom: 1px solid @dg;
+		transition: all 0.1s;	
+	}	
+}
+
+
+h1{
+	visibility: hidden;
+	line-height: 0;
+}
+
+.lead{
+	max-width: 500px;
+	margin: 0 auto;
+	fill: @db;
+	svg{
+		width: 100%;
+	}
+}
+
+.about{
+	border: 3px solid @db;
+	max-width: 500px;
+	margin: 30px auto;
+
+	p{
+		padding: 0 10px;
+	}
+}
+
+.buttons {
+	max-width: 500px;
+	margin: 0 auto;
+	
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	
+	justify-content: space-evenly;
+	
+	.button{
+
+	
+		width: 50px;
+		height: 50px;
+
+		a{
+			fill: @db;
+
+			transition: fill 0.2s;
+			-moz-transition: fill 0.2s;
+			-webkit-transition: fill 0.2s;
+			-o-transition: fill 0.2s;
+
+			&:hover, &:active{
+				fill: @dg;
+				cursor: pointer;
+				transition: fill 0.2s;
+				-moz-transition: fill 0.2s;
+				-webkit-transition: fill 0.2s;
+				-o-transition: fill 0.2s;
+			}
+		}
+	}
+}
