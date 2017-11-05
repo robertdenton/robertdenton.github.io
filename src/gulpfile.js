@@ -9,32 +9,32 @@ pkg = require('./package.json');
 
 gulp.task('webserver', function() {
   connect.server({
-    root: 'build',
+    root: '../',
     livereload: true
   });
 });
  
 gulp.task('less', function() {
-  return gulp.src('src/less/main.less')
+  return gulp.src('less/main.less')
     .pipe(less())
     .pipe(minifyCSS())
-    .pipe(gulp.dest('build/'))
+    .pipe(gulp.dest('../'))
     .pipe(connect.reload());
 });
 
 gulp.task('html', function(){
-  return gulp.src('src/html/index.html')
+  return gulp.src('html/index.html')
   .pipe(mustache({
     title: pkg.meta.title,
     description: pkg.meta.description
   }))
-  .pipe(gulp.dest('build/'))
+  .pipe(gulp.dest('../'))
   .pipe(connect.reload());
 });
  
 gulp.task('watch', function() {
-    gulp.watch('src/less/**/*', ['less']);
-    gulp.watch('src/html/**/*', ['html']);
+    gulp.watch('less/**/*', ['less']);
+    gulp.watch('html/**/*', ['html']);
 })
 
 // ---------------------

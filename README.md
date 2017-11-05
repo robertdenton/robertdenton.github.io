@@ -11,7 +11,7 @@ Dependencies:
 
 ```
 git clone https://github.com/robertdenton/gulp-starter.git
-cd gulp-starter
+cd project/build
 npm install
 
 # Start dev server
