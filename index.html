@@ -21,7 +21,35 @@
 	<p>My name is Rob and I do web stuff at a <a href="http://registerguard.com">newspaper</a>.</p>
 	<p>Most of the time I work with Python, HTML/CSS/JS and <a href="https://en.wikipedia.org/wiki/InterSystems_Cach%C3%A9">InterSystems Caché</a>.</p>
 	<p>On any given day you might find me making a <a href="https://github.com/robertdenton/cascadiaquakes">Twitter bot</a>, <a href="https://github.com/registerguard/dfp">debugging a third-party tool</a> or wrangling a CMS.</p>
-	<p>
+	<p>To see some of my work, click <a href="#workit" id="work-btn">here</a>.</p>
+<div id="work">
+    <h3>Tools and code</h3>
+    <ul>
+        <li><a href="https://github.com/robertdenton/cascadiaquakes" target="_blank">CascadiaQuakes: SMS alerts and Twitter bot for earthquakes near the Cascadia Subduction Zone (Python)</a></li>
+        <li><a href="https://github.com/registerguard/sheets2svg" target="_blank">Sheets2SVG: Converting Google Sheets charts into SVG documents editable in Adobe Illustrator (Python)</a></li>
+        <li><a href="https://github.com/registerguard/MapCard" target="_blank">MapCard: Organize geographic data using (Leaflet and Grunt)</a></li>
+        <li><a href="https://github.com/robertdenton/twitter-list-to-csv" target="_blank">Use the Twitter API to retrieve Twitter list info as a CSV (Python)</a></li>
+        <li><a href="https://github.com/registerguard/dfp" target="_blank"> Documention for The Register-Guard's DFP implementation</a></li>
+    </ul>
+
+    <h3>Special story presentation</h3>
+    <ul>
+        <li><a href="http://cloud.registerguard.com/brian-babbs-final-hour/" target="_blank">Brian Babb's final hour: Deconstructing the Eugene police response that ended in the death of a wounded veteran with PTSD</a></li>
+        <li><a href="http://cloud.registerguard.com/eclipse/" target="_blank">View of a lifetime: Coverage of the 2017 total solar eclipse above Oregon</a></li>
+        <li><a href="http://cloud.registerguard.com/trump-100-days/" target="_blank">4th Congressional District residents on President Trump's first 100 days in office</a></li>
+        <li><a href="http://cloud.registerguard.com/marijuana-shops/" target="_blank">Lane County marijuana shops by type</a></li>
+        <li><a href="http://pages.registerguard.com/springfield-plywood-and-veneer-mill-fire/" target="_blank">Up in flames: Coverage of the Springfield mill fire</a></li>
+        <li><a href="http://pages.registerguard.com/pick/" target="_blank">The Pick: Kenny Wheaton's seminal play still resonates 20 years later</a></li>
+    </ul>
+
+    <h3>UOHack training material</h3>
+    <ul>
+        <li><a href="https://github.com/uohack/data-literacy" target="_blank">Data literacy workshop</a></li>
+        <li><a href="https://github.com/uohack/starter-repo" target="_blank">Getting started with Github</a></li>
+        <li><a href="https://github.com/uohack/digital-media-boot-camp/blob/gh-pages/web/01-web-basics-skills-pack.md" target="_blank">Introduction to how the web works and making web pages</a></li>
+        <li><a href="https://github.com/uohack/digital-media-boot-camp/blob/gh-pages/programming/01-programming-basics.md" target="_blank">The basics of Programming (Python)</a></li>
+    </ul>
+</div>
 </div><!-- /.about -->
 
 <div class="buttons">
@@ -55,5 +83,25 @@
 			</svg>
 		</a>
 	</div>
-</div>	</body>
+</div><script>
+    var workBtn = document.getElementById("work-btn"),
+    work = document.getElementById("work"),
+    show = false;
+    
+    function showHide(){
+        if (show == false){
+            // show it
+            work.style.display = 'block';
+            work.style.visibility = 'visible';
+            show = true;
+        } else {
+            // hide it
+            work.style.display = 'none';
+            work.style.visibility = 'hidden';
+            show = false;
+        }
+    }
+
+    workBtn.addEventListener('click', showHide, false);
+</script>	</body>
 </html>

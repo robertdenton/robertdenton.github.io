@@ -7,11 +7,11 @@ My site. Uses:
 
 Dependencies:
 * node && npm
-* gulp-cli && gulp
+* gulp-cli (global) && gulp (local)
 
 ```
 git clone https://github.com/robertdenton/gulp-starter.git
-cd project/build
+cd project/src
 npm install
 
 # Start dev server
